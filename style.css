@@ -18,7 +18,7 @@
 }
 
 html {
-    font-family: "Anek Telugu", sans-serif;
+    font-family: "Anek Telugu", sans-serif !important;
 }
 
 body{

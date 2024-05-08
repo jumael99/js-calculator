@@ -1,8 +1,7 @@
-
 let mainString = "";
 
 function addValueToString() {
-    mainString = eval(mainString);
+        mainString = String(eval(mainString));
     show();
 }
 
@@ -10,25 +9,30 @@ function show() {
     document.querySelector(".show-result-screen").innerText = mainString;
 }
 
-document.querySelector('.five-part').addEventListener('click', function (event) {
+document.querySelector('.five-part').addEventListener('click', function(event) {
     let value = event.target;
     if (value.tagName === "BUTTON") {
-        if (value.innerText !== 'Ac' && value.innerText !== 'Del' && value.innerText !== '=') {
-            mainString += value.innerText;
-            show();
-        }
+        const operators = ['*', '+', '-', '/'];
+        const lastChar = mainString[mainString.length - 1];
+
         if (value.innerText === 'Ac') {
             mainString = "";
             show();
         }
-        if (value.innerText === 'Del') {
-            mainString = mainString.substring(0,mainString.length-1);
+        else if (value.innerText === 'Del') {
+            mainString = mainString.substring(0, mainString.length - 1);
             show();
         }
-        if (value.innerText === '=') {
+        else if (value.innerText === '=') {
             addValueToString();
+        }
+        else if (operators.includes(value.innerText) && operators.includes(lastChar)) {
             show();
         }
+        else {
+            mainString += value.innerText;
+            show();
+        }
+        console.log(mainString); 
     }
-})
-
+});
