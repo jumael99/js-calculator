@@ -20,6 +20,9 @@ document.querySelector('.five-part').addEventListener('click', function(event) {
             show();
         }
         else if (value.innerText === 'Del') {
+            if (mainString === 'Infinity') {
+                mainString = "";
+            }
             mainString = mainString.substring(0, mainString.length - 1);
             show();
         }
@@ -33,6 +36,6 @@ document.querySelector('.five-part').addEventListener('click', function(event) {
             mainString += value.innerText;
             show();
         }
-        console.log(mainString); 
+        console.log(mainString);
     }
 });
