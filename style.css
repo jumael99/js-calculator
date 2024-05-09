@@ -34,7 +34,7 @@ main {
     width: 100%;
 }
 
-.two-part {
+.calculator-main-part {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,7 +58,7 @@ main {
 }
 
 
-.five-part {
+.key-part {
     margin: 0 var(--spacing-lg);
     /*padding: var(--spacing-md) 0;*/
     display: flex;
@@ -85,7 +85,7 @@ button {
     padding: 0;
 }
 
-.four-part-each > .op {
+.all-the-buttons > .op {
     background-color: #EDAE4F;
 
 }

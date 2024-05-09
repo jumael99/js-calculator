@@ -14,7 +14,7 @@ function addValueToString() {
     showAndClean();
 }
 
-document.querySelector('.five-part').addEventListener('click', function(event) {
+document.querySelector('.key-part').addEventListener('click', function(event) {
     let value = event.target;
     if (value.tagName === "BUTTON") {
         const operators = ['*', '+', '-', '/'];
