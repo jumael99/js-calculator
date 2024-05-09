@@ -1,0 +1,100 @@
+:root {
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 16px;
+    --spacing-xl: 32px;
+
+    --btn-up-padding: 12px;
+    --btn-left-padding: 6px;
+
+    --btn-up-margin: 10px;
+    --btn-left-margin: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Anek Telugu", sans-serif !important;
+}
+
+body{
+    background-color: #230042;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.two-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 265px;
+    height: 417px;
+    border-radius: 5px;
+    background-color: #003e7a;
+    border: 0.5px solid white;
+}
+
+.show-result-screen {
+    width: 236px;
+    height: 65px;
+    background-color: #20807F;
+    margin: var(--spacing-sm) var(--spacing-lg);
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+}
+
+
+.five-part {
+    margin: 0 var(--spacing-lg);
+    /*padding: var(--spacing-md) 0;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 800px;
+    /*margin: 0 var(--spacing-sm);*/
+}
+
+/*button design*/
+.btn-primary {
+    /*padding: var(--btn-up-padding) var(--btn-left-padding);*/
+    margin: var(--btn-up-margin) var(--btn-left-margin);
+    background-color: #5A0100;
+    color: white;
+    font-weight: 400;
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+}
+
+button {
+    border: 0;
+    padding: 0;
+}
+
+.four-part-each > .op {
+    background-color: #EDAE4F;
+
+}
+
+.zero {
+    background-color: #155F78;
+}
+
+.result {
+    background: #015D0A;
+    width: 103px;
+}
