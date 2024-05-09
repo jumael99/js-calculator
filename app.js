@@ -1,12 +1,17 @@
 let mainString = "";
 
-function addValueToString() {
-        mainString = String(eval(mainString));
-    show();
-}
-
 function show() {
     document.querySelector(".show-result-screen").innerText = mainString;
+}
+
+function showAndClean() {
+    document.querySelector(".show-result-screen").innerText = mainString;
+    mainString = "";
+}
+
+function addValueToString() {
+    mainString = String(eval(mainString));
+    showAndClean();
 }
 
 document.querySelector('.five-part').addEventListener('click', function(event) {
