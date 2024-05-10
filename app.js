@@ -20,6 +20,10 @@ document.querySelector('.key-part').addEventListener('click', function(event) {
         const operators = ['*', '+', '-', '/'];
         const lastChar = mainString[mainString.length - 1];
 
+        if (operators.includes(value.innerText) && mainString.length === 0) {
+            mainString += '0';
+        }
+
         if (value.innerText === 'Ac') {
             mainString = "";
             show();
